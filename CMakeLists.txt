@@ -30,7 +30,9 @@ cmake_minimum_required(VERSION 2.6.3)
 if(NOT CMAKE_VERSION VERSION_LESS 3.1)
   cmake_policy(SET CMP0054 NEW)
 endif()
-
+if(NOT CMAKE_VERSION VERSION_LESS 3.11)
+  cmake_policy(SET CMP0072 NEW)
+endif()
 #######################################################################
 # define some macros
 #######################################################################
