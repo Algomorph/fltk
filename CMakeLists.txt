@@ -33,6 +33,9 @@ endif()
 if(NOT CMAKE_VERSION VERSION_LESS 3.11)
   cmake_policy(SET CMP0072 NEW)
 endif()
+if(NOT CMAKE_VERSION VERSION_LESS 3.12)
+  cmake_policy(SET CMP0074 NEW)
+endif()
 #######################################################################
 # define some macros
 #######################################################################
